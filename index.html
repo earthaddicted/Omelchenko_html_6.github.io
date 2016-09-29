@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>HW 6</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="wrapper">
+		<header>
+			<section class="contact_line">
+				<div class="contact_tell">
+						<a href="tel:+380441234567">(044)123-45-67</a>
+						<a href="tel:+380445678910">(044)567-89-10</a>
+				</div>
+				<div class="log_form">
+					<form action="/echo" method="post">
+						<input name="name" type="text" class="registration_input" placeholder="логин" tabindex="1" required/>
+						<input type="password" name="password" class="registration_input" placeholder="пароль" tabindex="2" required/>
+					</form>
+					<div class="log_entrance">
+						<div class="log_entrance_in">
+							<div class="log_entrance_in__entrance" 
+							>вход</div>
+							<div class="log_entrance_in__reg">регистрация</div>	
+						</div>
+						<div class="forgotten_password">забыли пароль?</div>	
+					</div>
+				</div>
+				<div>
+					<div class="contacts_short">
+						<a href=""><img src="img/icons/house.png" alt=""></a>
+						<a href=""><img src="img/icons/site_map.png" alt=""></a>
+						<a href=""><img src="img/icons/letter.png" alt=""></a>
+					</div>
+				</div>
+			</section>
+			<section>
+				<img src="img/blick-copy.jpg" alt="front_img">
+			</section>
+			<nav class="nav_menu">
+				<ul>
+					<li><a href="#">О КОМПАНИ</a></li>
+					<li><a href="#">ОПЛАТА</a></li>
+					<li><a href="#">ДОСТАВКА</a></li>
+					<li><a href="#">СТАТЬИ</a></li>
+					<li><a href="#">КОНТАКТЫ</a></li>
+				</ul>
+				<div class="nav_menu__buy">
+					<div  class="nav_menu__buy__goods">товаров:
+						<div class="nav_menu__buy__color">0</div>
+					</div>
+					<div class="nav_menu__buy__sum">на сумму:
+						<div class="nav_menu__buy__color">0,00 грн.</div>
+					</div>
+				</div>
+			</nav>
+		</header>
+		<main>
+			<section class="search">
+				<div>
+					<h2>Поиск по автомобилю</h2>
+					<form action="/echo" method="post">
+						<div>
+							<label for="discs">Диски:</label>
+								<label for="">Марка <span class="text_addition">авто</span>:
+									<select>
+										<option value="car-model">&nbsp;&nbsp;</option>
+										<option value="car-model">&nbsp;&nbsp;</option>
+										<option value="car-model">&nbsp;&nbsp;</option>
+										<option value="car-model">&nbsp;&nbsp;</option>
+									</select>
+								</label>
+								<label for="">Модель 
+									<span class="text_addition">автомобиля</span>:
+									<select>
+										<option value="car-model">&nbsp;&nbsp;</option>
+										<option value="car-model">&nbsp;&nbsp;</option>
+										<option value="car-model">&nbsp;&nbsp;</option>
+										<option value="car-model">&nbsp;&nbsp;</option>
+									</select>
+								</label>
+								<label for="">Год выпуска <span class="text_addition">автомобиля</span>:
+									<select>
+										<option value="car-model">&nbsp;&nbsp;</option>
+										<option value="car-model">&nbsp;&nbsp;</option>
+										<option value="car-model">&nbsp;&nbsp;</option>
+										<option value="car-model">&nbsp;&nbsp;</option>
+									</select>
+								</label>
+								<label for="">Комплектация:
+									<select>
+										<option value="car-model">&nbsp;&nbsp;</option>
+										<option value="car-model">&nbsp;&nbsp;</option>
+										<option value="car-model">&nbsp;&nbsp;</option>
+										<option value="car-model">&nbsp;&nbsp;</option>
+									</select>
+								</label>
+						</div>
+						<div>
+							<label for="discs">Шины:</label>
+								<label for="">Марка <span class="text_addition">авто</span>:
+									<select>
+										<option value="car-model">&nbsp;&nbsp;</option>
+										<option value="car-model">&nbsp;&nbsp;</option>
+										<option value="car-model">&nbsp;&nbsp;</option>
+										<option value="car-model">&nbsp;&nbsp;</option>
+									</select>
+								</label>
+								<label for="">Модель 
+									<span class="text_addition">автомобиля</span>:
+									<select>
+										<option value="car-model">&nbsp;&nbsp;</option>
+										<option value="car-model">&nbsp;&nbsp;</option>
+										<option value="car-model">&nbsp;&nbsp;</option>
+										<option value="car-model">&nbsp;&nbsp;</option>
+									</select>
+								</label>
+								<label for="">Год выпуска <span class="text_addition">автомобиля</span>:
+									<select>
+										<option value="car-model">&nbsp;&nbsp;</option>
+										<option value="car-model">&nbsp;&nbsp;</option>
+										<option value="car-model">&nbsp;&nbsp;</option>
+										<option value="car-model">&nbsp;&nbsp;</option>
+									</select>
+								</label>
+								<label for="">Комплектация:
+									<select>
+										<option value="car-model">&nbsp;&nbsp;</option>
+										<option value="car-model">&nbsp;&nbsp;</option>
+										<option value="car-model">&nbsp;&nbsp;</option>
+										<option value="car-model">&nbsp;&nbsp;</option>
+									</select>
+							</label>							
+						</div>
+						<div>
+							поиск...
+						</div>
+					</form>
+				</div>
+				<div>
+					<h2>поиск шин</h2>
+					<form action="/echo" method="post">
+						<label for="">Размер:
+							<select>
+								<option value="">145</option>
+								<option value="">150</option>
+								<option value="">155</option>
+							</select> /
+							<select>
+								<option value="">&nbsp;</option>
+								<option value="">&nbsp;</option>
+								<option value="">&nbsp;</option>
+							</select>
+						</label>
+						<label for="">R
+							<select>
+								<option value="">&nbsp;</option>
+								<option value="">&nbsp;</option>
+								<option value="">&nbsp;</option>
+							</select>
+							</label>
+						<label for="">
+							Сезон:
+							<input id="checkbox-1" type="checkbox">
+    			        	<label for="checkbox-1">лето</label>
+    			        	<input id="checkbox-2" type="checkbox">
+    			        	<label for="checkbox-2">зима</label>
+    			        	<input id="checkbox-3" type="checkbox">
+    			        	<label for="checkbox-3">все сез</label>
+						</label>
+						<div>
+							поиск...
+						</div>
+					</form>
+				</div>
+				<div>
+					<h2>поиск дисков</h2>
+					<form action="echo" method="post">
+						<div>
+							<h2>
+								поиск дисков
+							</h2>
+							<label for="">
+								Диаметр <span>диска</span>:
+								<select>
+									<option value="">14</option>
+									<option value="">18</option>
+									<option value="">26</option>
+								</select>
+							</label>
+							<label for="">
+								Количество <span>крепёжных 
+								отверстий</span>:
+								<select>
+									<option value="">3</option>
+									<option value="">4</option>
+								</select>
+							</label>
+							<label for="">
+								Диаметр <span>красположения крепёжных отверстий</span>:
+								<select>
+									<option value="">12</option>
+									<option value="">14</option>
+								</select>
+							</label>						
+						</div>
+						<div>
+							<label for="">
+								ДЦО <span>(диаметр центрального отверстия)</span>:
+								<select>
+									<option value="">12</option>
+									<option value="">14</option>
+								</select>
+							</label>
+							<label for="">
+								ЕТ<span>(вылет диска)</span>:
+								<select>
+									<option value="">12</option>
+									<option value="">14</option>
+								</select>
+							</label>
+						</div>	
+					</form>
+					<div>поиск...</div>
+				</div>
+			</section>
+			<section>
+				<div class="aside"></div>
+				<div class="general-content"></div>
+				<div class="aside"></div>
+			</section>
+			<section class="brands">
+			</section>
+		</main>
+		<footer>
+			<nav>
+				<ul>
+					<li><a href="">О компании</a></li>
+					<li><a href="">Доставка</a></li>
+					<li><a href="">Статьи</a></li>
+					<li><a href="">Контакты</a></li>
+				</ul>
+			</nav>
+			<div>
+				Создание сайта &copy; Global Vision
+			</div>
+		</footer>
+	</div>	
+</body>
+</html>
