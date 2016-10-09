@@ -87,7 +87,7 @@ footer div {
 
 .search_column,
 .column_two form,
-.product_select__secondcolumn_ckeckbox div,
+/* .product_select__secondcolumn_ckeckbox div, */
 .tire,
 aside,
 .aside div {
@@ -177,7 +177,7 @@ header {
 
 .contact_line {
 	width: 100vw;
-    margin: 13px 8px 10px 5px;
+    margin: 18px 8px 10px 5px;
 }
 
 .contact_tell {
@@ -345,9 +345,9 @@ background: -webkit-linear-gradient( 90deg, rgb( 32, 105, 136 ) 0%, rgb( 17, 65,
 
 /*---------------     # Main ---------------*/
 .search {
-	margin: 11px 3px 0;
+	margin: 10px 3px 0;
 	position: relative;
-	padding-bottom: 16px;
+	padding-bottom: 17px;
 }
 
 .search_column {
@@ -355,6 +355,7 @@ background: -webkit-linear-gradient( 90deg, rgb( 32, 105, 136 ) 0%, rgb( 17, 65,
 	border-radius: 17px;
 	border: 1px solid #9c9c9d;
 	padding-bottom: 23px;
+	position: relative;
 }
 
 .search_column .label {
@@ -409,16 +410,23 @@ background: -webkit-linear-gradient( 90deg, rgb( 32, 105, 136 ) 0%, rgb( 17, 65,
 }
 
 .product_search {
-	color: #154467;
-	font-size: 14px;
-	font-style: italic;
-	line-height: 21px;
-	text-decoration: underline;
-	flex: 0 0 auto;
-	position: absolute;
-    bottom: 20px;
-    padding-right: 17px;
+    color: #154467;
+    font-size: 14px;
+    font-style: italic;
+    text-decoration: underline;
+    flex: 0 0 auto;
+    position: absolute;
+    bottom: 6px;
+    right: 12px;
+    background: #fff;
+    border: transparent;
+    cursor: pointer;
 }
+
+/* .product_search input[type="submit"] {
+	cursor: pointer;
+} */
+
 
 .product_select {
     margin: 2px 0;
@@ -483,37 +491,45 @@ select::-ms-expand {
     display: flex;
 }
 
-/*  */
-.checkboxlist input {
-	width: 11px;
-	height: 11px;
-	box-shadow: inset 0.5px 0.9px 1px rgba(0, 0, 0, 0.75);
-	margin-right: 12px;
-	/*  */
-	opacity: 0.1; 
-	/*  */
+.checkboxlist {
+	display: flex;
+	flex-flow: row wrap;
+    width: 65px;
+    align-items: center;
 }
 
-.checkboxlist label::before {
+.checkboxlist  input[type="checkbox"] {
+	/* visibility: hidden; */
+	display: none;
+}
+
+.checkboxlist label {
+	cursor: pointer;
+}
+
+.checkboxlist label span {
+	display: flex;
+	margin: 2px;
+}
+
+ .checkboxlist label > input[type="checkbox"] + .label-text::before {
 	content: "";
-	display: inline-block;
-	width: 9px;
-	height: 9px;
-	border: 1px solid #114165;
-	box-shadow: inset 0.5px 0.9px 1px rgba(0, 0, 0, 0.75);
-    margin: 0 -13px 0 8px;
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    box-shadow: inset 0.5px 0.9px 1px rgba(0, 0, 0, 0.75);
+    display: inline-block;
+    font-size: 12px;
+    margin: 0 4px 0 6px;
 }
-/*  */
 
-.checkboxlist input[type="checkbox"]{
-	box-shadow: inset 0.5px 0.9px 5px rgba(0, 0, 0, 0.75);
-	background: #FFF;
-    margin: 0 3px 0.5px 1px;
-    padding: 0;
-}
-/* end of second filter section */
+.checkboxlist label > input[type="checkbox"]:checked + .label-text::before {
+		content: "\2714";
+		display: inline-block;
+		font-weight: 900;
+}		
 
-/* third filter section */
+
 .column_three {
 	padding: 0 22px 0 12px;
 }
@@ -524,20 +540,30 @@ select::-ms-expand {
 	color: black;
 	font-size: 10px;
 	font-weight: 400;
+	margin-right: 13px;
 }
 
 .product_select__thirdcolumn select {
 	width: 57px;
 }
 
-.thirdcolumn_firstblock .label {
-	margin: 0 29px 0 0;
-}
-
 .thirdcolumn_secondblock {
     border-left: 1px solid #77858b;
     padding-left: 8px;
 }
+
+.thirdcolumn_secondblock .text_addition {
+	font-size: 8px;
+}
+
+.thirdcolumn_secondblock .label {
+	font-size: 9px;
+}
+
+.product_select__thirdcolumn {
+	margin: 0;
+}
+
 /* end of third filter section */
 /* filter section */
 
@@ -767,45 +793,50 @@ aside a:hover {
 	margin: 5px 0 3px 5px;
 }
 
-
-
 .aside_right .aside_checkbox input {
 	width: 11px;
 	height: 11px;
-	box-shadow: inset 0.5px 0.9px 1px rgba(0, 0, 0, 0.75);
-	/* box-shadow: -1px -1px 1px 0 rgba(55, 78, 95, 1); */
 	margin-right: 12px;
-	/*  */
-	opacity: 0.1; 
-	/*  */
+	visibility: hidden;
 }
 
-.aside_checkbox label::before {
+.aside_right  input[type="checkbox"] {
+	display: none;
+}
+
+.aside_right label {
+	cursor: pointer;
+}
+
+.aside_right  label span {
+	display: flex;
+	margin: 2px;
+}
+
+.aside_right label > input[type="checkbox"] + .label-text::before {
 	content: "";
-	display: inline-block;
-	width: 9px;
-	height: 9px;
-	border: 1px solid #114165;
-	box-shadow: inset 0.5px 0.9px 1px rgba(0, 0, 0, 0.75);
-	/* margin: 2px 9px 0 -24px; */
-	margin: 0px -21px 0 3px;
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    border: 1px solid #114165;
+    box-shadow: inset 0.5px 0.9px 1px rgba(0, 0, 0, 0.75);
+    display: inline-block;
+    font-size: 12px;
+    margin: 0 4px 0 6px;
 }
 
-/* .aside_checkbox label::after {
-	content: '';
-    display: inline-block;
-    background: url('../img/icons/check.png');
-    width: 16px;
-    height: 16px;
-    margin: 2px 9px 0 -24px;
-} */
+.aside_right label > input[type="checkbox"]:checked + .label-text::before {
+		content: "\2714";
+		display: inline-block;
+		font-weight: 900;
+}		
 
 
 .aside_right h3:nth-of-type(2) {
 	margin: 10px 13px 4px;
 }
 /* button */
-.aside_right button {
+.aside_right .button {
 	width: 82px;
 	background-color: #000;
 	background-image: linear-gradient(180deg, #206988 0%, #114165 59%, #0c3256 100%);
@@ -820,7 +851,7 @@ aside a:hover {
 	transition: box-shadow .4s ease-in-out;
 }	
 
-.aside_right button:hover {
+.aside_right .button:hover {
 	box-shadow: 0 0 10px #969696;
 	opacity: 0.8;
 }
@@ -829,7 +860,7 @@ aside a:hover {
 
 /* section brands */
 .allbrands {
-	margin: 18px 0 11px;
+	margin: 19px 0 10px;
 }
 
 .allbrands img {
@@ -841,7 +872,7 @@ aside a:hover {
 footer {
 	background-color: #213a4d;
 	border: 1px solid #242a3c;
-	padding: 6px 0 2px 0;
+	padding: 5px 0 40px 0;
 }
 
 .footer_nav_menu li {
@@ -855,7 +886,7 @@ footer {
 .footer_nav_menu a {
 	color: #bec6c9;
 	font-size: 12px;
-    padding: 0 10px 0 13px;
+    padding: 0 12px 0 12px;
     transition: color .4s ease-in-out;
 }
 
